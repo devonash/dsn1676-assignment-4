@@ -1,5 +1,5 @@
 var blueberries = {
-    name: 'blueberry',
+    fruitName: 'Blueberries',
     firstName: "Vaccinium corymbosum",
     growsOnShrub: true,
     energy: 240,
@@ -8,6 +8,7 @@ var blueberries = {
 };
 
 var grapes = {
+    fruitName: 'Grapes',
     firstName: "Vitis vinifera",
     growsOnShrub: false,
     energy: 288,
@@ -16,6 +17,7 @@ var grapes = {
 };
 
 var redCurrant = {
+    fruitName: 'Red Currant',
     firstName: "Ribes rubrum",
     growsOnShrub: true,
     energy: 234,
@@ -26,7 +28,10 @@ var redCurrant = {
 
 
 var writeBerryInfo = function (berry) {
-    document.write('<h1>' + berry.firstName + '</h1>');
+    
+    document.write('<h1>' + berry.fruitName + '</h1>');
+    
+    document.write('<h2>' + berry.firstName + '</h2>');
     
     document.write('<dl>');
     
